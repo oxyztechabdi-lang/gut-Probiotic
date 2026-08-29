@@ -1396,15 +1396,12 @@
     }
 
     .video-testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 22px;
       margin-top: 34px;
-    }
-
-    .grid-3-center {
-      grid-template-columns: repeat(3, 1fr);
-      max-width: 950px;
+      max-width: 1100px;
       margin-inline: auto;
     }
 
@@ -1416,6 +1413,8 @@
       text-align: right;
       box-shadow: 0 10px 30px rgba(0, 0, 0, .04);
       transition: .3s ease;
+      flex: 1 1 calc(25% - 16.5px);
+      max-width: calc(25% - 16.5px);
     }
 
     .video-testimonial-card:hover {
@@ -1636,8 +1635,9 @@
     }
 
     @media(max-width:1200px) {
-      .video-testimonials-grid {
-        grid-template-columns: repeat(2, 1fr);
+      .video-testimonial-card {
+        flex: 1 1 calc(50% - 11px);
+        max-width: calc(50% - 11px);
       }
     }
 
@@ -1704,9 +1704,13 @@
 
       .quality-grid,
       .benefits-grid,
-      .video-testimonials-grid,
       .contact-steps {
         grid-template-columns: 1fr;
+      }
+      
+      .video-testimonial-card {
+        flex: 1 1 100%;
+        max-width: 100%;
       }
 
       .topbar {
@@ -3855,11 +3859,7 @@
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
         </div>
-        <div class="video-testimonial-content">
-          <span class="case-tag">فيديو 1</span>
-          <h3>تجربة بعد فترة من الاستخدام</h3>
-          <p>تجربة توضح انطباعًا بعد فترة من الاستخدام.</p>
-        </div>
+
       </div>
 
       <div class="video-testimonial-card fade">
@@ -3870,11 +3870,7 @@
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
         </div>
-        <div class="video-testimonial-content">
-          <span class="case-tag">فيديو 2</span>
-          <h3>رأي أحد العملاء في المنتج</h3>
-          <p>مشاركة مباشرة حول تجربته مع <bdi>Gut+</bdi>.</p>
-        </div>
+
       </div>
 
       <div class="video-testimonial-card fade">
@@ -3885,11 +3881,7 @@
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
         </div>
-        <div class="video-testimonial-content">
-          <span class="case-tag">فيديو 3</span>
-          <h3>تجربة مراجع بعد المتابعة</h3>
-          <p>فيديو قصير يوضح تجربة أحد المستخدمين مع <bdi>Gut+</bdi>.</p>
-        </div>
+
       </div>
     </div>
   </section>
@@ -3923,11 +3915,7 @@
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
         </div>
-        <div class="video-testimonial-content">
-          <span class="case-tag">فيديو 4</span>
-          <h3>انطباع بعد الاستخدام</h3>
-          <p>فيديو قصير يعرض انطباع أحد المستخدمين مع <bdi>Gut+</bdi>.</p>
-        </div>
+
       </div>
 
       <div class="video-testimonial-card fade">
@@ -3938,11 +3926,7 @@
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
         </div>
-        <div class="video-testimonial-content">
-          <span class="case-tag">فيديو 5</span>
-          <h3>متابعة الحالة مع الفريق</h3>
-          <p>حالة توضح كيف تتم المتابعة باهتمام وخطوات واضحة.</p>
-        </div>
+
       </div>
 
       <div class="video-testimonial-card fade">
@@ -3953,11 +3937,7 @@
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
         </div>
-        <div class="video-testimonial-content">
-          <span class="case-tag">فيديو 6</span>
-          <h3>رحلة تحسن تدريجية</h3>
-          <p>مشاركة مباشرة عن التجربة والمتابعة خلال رحلة الاستخدام.</p>
-        </div>
+
       </div>
 
       <div class="video-testimonial-card fade">
@@ -3968,11 +3948,7 @@
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
         </div>
-        <div class="video-testimonial-content">
-          <span class="case-tag">فيديو 7</span>
-          <h3>رأي أحد المستخدمين بعد التجربة</h3>
-          <p>رأي أحد المستخدمين بعد تجربة <bdi>Gut+</bdi>.</p>
-        </div>
+
       </div>
     </div>
   </section>
