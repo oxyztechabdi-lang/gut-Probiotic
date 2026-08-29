@@ -254,7 +254,7 @@
     .btn-gold {
       background: var(--gold);
       color: var(--brown);
-      box-shadow: 0 10px 30px rgba(205, 176, 106, .35);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, .15);
     }
 
     .btn-gold:hover {
@@ -305,7 +305,7 @@
       position: sticky;
       top: 0;
       z-index: 999;
-      background: rgba(6, 61, 45, .97);
+      background: rgba(0, 122, 89, 0.96);
       backdrop-filter: blur(14px);
       padding: 10px 5%;
       display: flex;
@@ -1586,8 +1586,8 @@
     }
 
     .footer {
-      background: #00291F;
-      color: rgba(255, 255, 255, .48);
+      background: var(--emerald);
+      color: rgba(255, 255, 255, .75);
       padding: 50px 6% 28px;
     }
 
@@ -1603,7 +1603,8 @@
       width: auto;
       max-width: 280px;
       object-fit: contain;
-      margin-bottom: 16px
+      margin-bottom: 16px;
+      filter: brightness(0) invert(1);
     }
 
     .footer h4 {
@@ -1613,8 +1614,13 @@
 
     .footer a {
       display: block;
-      color: rgba(255, 255, 255, .48);
+      color: rgba(255, 255, 255, .75);
       margin-bottom: 8px;
+      transition: .3s ease;
+    }
+    
+    .footer a:hover {
+      color: #fff;
     }
 
     .footer-bottom {
@@ -1900,8 +1906,7 @@
       background: linear-gradient(135deg, #003B2B 0%, #00291F 100%) !important;
     }
 
-    .disclaimer,
-    .footer {
+    .disclaimer {
       background: #00291F !important;
     }
 
